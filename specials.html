@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>
+  Restaurant</title>
+<link href="style.css" rel="stylesheet">
+<link href="C:\Users\ABCD\Desktop\Maac  web designing\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+ </head>
+  
+  
+  <body>
+
+<!-- Header -->
+
+<div class="wrap1">
+<div class="header">
+
+<ul class="head">
+ 
+</div>
+
+  <div class="nav"> 
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+
+      <i class="fa fa-bars"></i>
+
+    </label>
+
+
+  <ul class="ul1"><li><a>Delicious</a></li></ul>  
+
+<ul class="ul2">
+
+  <li><a href="index.html">Home</a></li>
+
+  <li><a href="about.html">About</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="specials.html">Specials</a></li>
+  <li><a href="Events.html">Events</a></li>
+  <li><a href="chefs.html">Chefs</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="reviews.html">Reviews</a>
+
+  </li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</div></div>
+
+
+
+
+
+<div id="index1">
+
+  </div>
+  
+<div class="divI">
+<h2 data-aos="zoom-in-up">Delicious Restaurant</h2>
+<p data-aos="fade-up"
+     data-aos-duration="3000"   class="a1" >Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et </p>
+<p data-aos="fade-up"
+     data-aos-duration="3000"   class="a1" >est quaerat sequi nihil ut aliquam. Occaecati alias dolorem </p>
+<p data-aos="fade-up"
+     data-aos-duration="3000"   class="a1" >mollitia ut eit . Similique ea voluptatem. Esse doloremque </p>
+<p data-aos="fade-up"
+     data-aos-duration="3000"   class="a1" >accusamus repellendus deleniti vel. Minus et tempore modi</p> <p> architecto</p>
+
+<span data-aos="fade-up"
+     data-aos-duration="1000" ><a  class="a1" href="menu.html">OUR MENU</a></span>
+<span data-aos="fade-up"
+     data-aos-duration="1000" ><a    class="a1" href="bookTable.html"> Book A Table</a></span>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="wraps">
+<h2>Check our Specials</h2>
+<p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis</p>
+<p>est adipisci expedita at voluptas atque vitae autem.</p>
+</div>
+
+<div class="contentS">
+    
+ <ul class="first">
+     <li><button id="b1" style="color:black;
+background-color:transparent; border:none;">Modi sit est</button></li>
+     <li><button id="b2" style="color:black;
+background-color:transparent; border:none;">Unde praesentium sed</button></li>
+     <li><button id="b3" style="color:black;
+background-color:transparent; border:none;">Pariatur explicabo vel</button></li>
+     <li><button id="b4" style="color:black;
+background-color:transparent; border:none;">Nostrm qui quasi</button></li>
+     <li><button id="b5" style="color:black;
+background-color:transparent; border:none;">lusto ut expedita aut</button></li>
+ </ul>
+   <div id="tab2">
+    <div class="seconds">
+      <h2>Architecto ut aperiam autem id</h2>
+      <p>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus</p> <p>non sunt
+       dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+      <p> Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam.</p><p> Neque necessitatibus illo rerum eum ut.</p>
+      <p> Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt </p><p>fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+    </div>
+    <div class="third">
+        <img src="img/chefs/a.jpg" width="220px" height="220px">
+    </div>
+    
+</div>
+        </div>
+
+
+
+
+
+<!--footer-->
+<div class="footer">
+<h2>Delicious</h2>
+<p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+<div class="div3">
+<div data-aos="fade-up" data-aos-duration="3000" class="div22"><a href=""><img src="img/chefs/a.jpg" ></a></div>
+<div data-aos="fade-up" data-aos-duration="3000" class="div22"><a href=""><img src="img/chefs/b.jpg"></a></div>
+<div  data-aos="fade-up" data-aos-duration="3000" class="div22"><a href=""><img src="img/chefs/c.jpg"></a></div>
+<div data-aos="fade-up" data-aos-duration="3000" class="div22"><a href=""><img src="img/chefs/a.jpg"></a></div>
+<div data-aos="fade-up" data-aos-duration="3000" class="div22"><a href=""><img src="img/chefs/b.jpg"></a></div>
+</div>
+
+
+<p>© Copyright Delicious. All Rights Reserved</p>
+<p>Designed by Bootstrap Made</p>
+</div>
+
+
+<script>
+        
+  document.querySelector("#b1").onkeyup=function()
+    {
+      var xhr=new XMLHttpRequest();
+      xhr.open("get","specials1.html",true);
+      xhr.send();     
+      xhr.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+            {
+                document.querySelector("#tab2").innerHTML=this.responseText;
+                
+            }
+      }
+        
+        
+    }
+                
+        
+        </script>
+        
+        
+        <script>
+        
+  document.querySelector("#b2").onclick=function()
+    {
+      var xhr=new XMLHttpRequest();
+      xhr.open("get","specials2.html",true);
+      xhr.send();     
+      xhr.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+            {
+                document.querySelector("#tab2").innerHTML=this.responseText;
+                
+            }
+      }
+               
+    }
+          
+        </script> 
+        
+ <script>
+        
+  document.querySelector("#b3").onclick=function()
+    {
+      var xhr=new XMLHttpRequest();
+      xhr.open("get","specials3.html",true);
+      xhr.send();     
+      xhr.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+            {
+                document.querySelector("#tab2").innerHTML=this.responseText;
+                
+            }
+      }
+        
+        
+    }    
+        
+        </script>   
+         
+     
+                  <script>
+        
+  document.querySelector("#b4").onclick=function()
+    {
+      var xhr=new XMLHttpRequest();
+      xhr.open("get","specials4.html",true);
+      xhr.send();     
+      xhr.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+            {
+                document.querySelector("#tab2").innerHTML=this.responseText;
+                
+            }
+      }
+        
+        
+    }    
+        
+        </script>            
+                   
+                             
+  <script>
+        
+  document.querySelector("#b5").onclick=function()
+    {
+      var xhr=new XMLHttpRequest();
+      xhr.open("get","specials5.html",true);
+      xhr.send();     
+      xhr.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+            {
+                document.querySelector("#tab2").innerHTML=this.responseText;
+                
+            }
+      }
+        
+        
+    }    
+        
+        </script>            
+                            
+          
+              
+ 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>              
+                 </body>
+</html>
